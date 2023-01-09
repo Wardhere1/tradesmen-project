@@ -14,3 +14,4 @@ function shortcut(string) {
 
 shortcut("hello");
 // hey
+//hello.
