@@ -17,8 +17,7 @@ VALUES
     'software engineer',
     'i like pizza and beaing mok in UFC, he takes corn on the daily',
     '01'
-)
-VALUES
+),
 (
     'mohamed',
     'khalaf',
@@ -27,5 +26,4 @@ VALUES
     'software engineer',
     'i like salad, wardhere is the goat in UFC! ',
     '02'
-    
-)
+);
