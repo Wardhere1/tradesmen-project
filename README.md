@@ -22,6 +22,7 @@ _Our Product_ - is a trusted, local tradesmen provider that offers a variety of 
 ## Authors
 
 **[Wardhere Adan: Dev](https://github.com/Wardhere1)** - Leader of the World Economic Forum (Icon).
+
 **[Mohamed Khalaf: Dev](https://github.com/MohamedKhalaf92)** - Leader of the new world order (Mogul).
 
 ## Important DOCUMENTS - LINKS BELOW TO REFER TO .
