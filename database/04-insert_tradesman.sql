@@ -7,6 +7,7 @@ INSERT INTO Trademan_Table(
     profession,
     biography,
     image_id,
+    services_id
 )
 VALUES
 (
@@ -16,7 +17,8 @@ VALUES
     123456789,
     'software engineer',
     'i like pizza and beaing mok in UFC, he takes corn on the daily',
-    '01'
+    '01',
+    1
 ),
 (
     'mohamed',
@@ -25,5 +27,6 @@ VALUES
     123456789,
     'software engineer',
     'i like salad, wardhere is the goat in UFC! ',
-    '02'
+    '02',
+    1
 );
