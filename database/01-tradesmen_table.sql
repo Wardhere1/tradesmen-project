@@ -1,4 +1,4 @@
-CREATE Trademan_Table(
+CREATE trademan_table(
     tradesman_id INT GENERATED ALWAYS AS IDENTITY,
     firstname VARCHAR(100) NOT NULL,
     surename VARCHAR(100) NOT NULL,
