@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prettier": "2.8.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "eject": "react-scripts eject",
+    "start": "node server.js"
+  },
+  "name": "tradesmen-project",
+  "description": "![alt text](https://res.cloudinary.com/quotezone/images/q_auto/v1626350510/wp/tradesman-insurance/tradesman-insurance.png?_i=AA)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wardhere1/tradesmen-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wardhere1/tradesmen-project/issues"
+  },
+  "homepage": "https://github.com/Wardhere1/tradesmen-project#readme",
+  "type": "module"
+}
