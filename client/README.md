@@ -39,6 +39,24 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## DOCKER-Front-End-Container
+
+Trades-Match docker container instructions for the front-end
+
+after git pull follow the commands below to have the container set-up:
+
+docker build -t react-image . // this builds the image from the docker file in thr client directory
+
+docker images -a // this shows a list
+
+docker run -d -p 3002:3000 --name react-container1 react-image // this container with port specified localhost:container port, --name assigns a name to the container being created (react-image) is the image that the container is being built.
+
+docker ps // this list the container that are running and should list the one just created
+
+docker stop react-container1 // stops the container (name of container)
+
+docker start react-container1 // starts the container (name of container)
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
