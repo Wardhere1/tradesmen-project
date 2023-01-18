@@ -1,5 +1,12 @@
 {
   "devDependencies": {
     "prettier": "2.8.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "eject": "react-scripts eject",
+    "type": "module"
   }
 }
