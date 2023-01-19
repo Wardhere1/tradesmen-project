@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 
-const apiPort = 3003;
+const apiPort = 4000;
 app.listen(apiPort, () => {
   console.log(`tradesmatch app listening on port ${apiPort}`);
 });

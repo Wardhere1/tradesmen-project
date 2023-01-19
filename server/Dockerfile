@@ -2,10 +2,12 @@ FROM node:18-alpine
 
 WORKDIR /server
 
-COPY . ./
+COPY package.json .
 
 RUN npm install
 
-EXPOSE 3001
+COPY . ./
+
+EXPOSE 4000
 
 CMD ["node", "server.js"]
