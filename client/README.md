@@ -41,21 +41,57 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## DOCKER-Front-End-Container
 
-Trades-Match docker container instructions for the front-end
+Trades-Match docker container instructions for the front-end.
 
-after git pull follow the commands below to have the container set-up:
+After git pull follow the commands below to have the container set-up:
 
 docker build -t react-image . // this builds the image from the docker file in thr client directory
 
 docker images -a // this shows a list
 
-docker run -d -p 3002:3000 --name react-container1 react-image // this container with port specified localhost:container port, --name assigns a name to the container being created (react-image) is the image that the container is being built.
+docker run -d -p 3002:3000 --name react-container1 react-image // builds the container from the Image created and specifies the ports(-p) in detached mode (-d) -p(port forwarding traffic localhost machine port : container port) -- name assigns a name to the container being built.
 
 docker ps // this list the container that are running and should list the one just created
 
 docker stop react-container1 // stops the container (name of container)
 
 docker start react-container1 // starts the container (name of container)
+
+## Docker-Server-Container
+
+Trades-Match docker container instructions for the Server.
+
+After git pull follow the commands below to have the container set-up:
+
+docker build -t serverimage . // builds the image from the dockerfile pulled down.
+
+docker images -a // this shows a list of docker images built on your local machine
+
+docker run -p 4000:4000 -d --name Server-containerNew serverimage // builds the container from the Image created and specifies the ports(-p) in detached mode (-d) -p(port forwarding traffic localhost machine port : container port) -- name assigns a name to the container being built.
+
+docker ps // this list the container that are running and should list the one just created
+
+docker stop Server-containerNew // stops the container (name of container)
+
+docker start Server-containerNew // starts the container (name of container)
+
+## Docker-container-for-the-Database
+
+Trades-Match docker container instructions for the Database.
+
+After git pull follow the commands below to have the container set-up:
+
+docker build -t new-postgres-db . // this builds the image from the docker file in thr client directory
+
+docker images -a // this shows a list
+
+docker run -d -p 5432:5432 --name Database-container new-postgres-db // builds the container from the Image created and specifies the ports(-p) in detached mode (-d) -p(port forwarding traffic localhost machine port : container port) -- name assigns a name to the container being built.
+
+docker ps // this list the container that are running and should list the one just created
+
+docker stop Database-container // stops the container (name of container)
+
+docker start Database-container // starts the container (name of container)
 
 ## Learn More
 
