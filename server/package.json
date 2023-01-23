@@ -8,7 +8,7 @@
   },
   "scripts": {
     "eject": "react-scripts eject",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "name": "tradesmen-project",
   "description": "![alt text](https://res.cloudinary.com/quotezone/images/q_auto/v1626350510/wp/tradesman-insurance/tradesman-insurance.png?_i=AA)",
