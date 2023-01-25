@@ -1,4 +1,4 @@
-CREATE trademan_table(
+CREATE TABLE trademan_table(
     tradesman_id INT GENERATED ALWAYS AS IDENTITY,
     firstname VARCHAR(100) NOT NULL,
     surename VARCHAR(100) NOT NULL,
@@ -9,6 +9,5 @@ CREATE trademan_table(
     biography VARCHAR(1000) NOT NULL,
     image_id VARCHAR(100) NOT NULL,
     services_id INT NOT NULL,
-    PRIMARY KEY(tradesman_id),
-    FOREIGN KEY(services_id) REFERENCES Services_Table(service_id)
+    PRIMARY KEY(tradesman_id)
 );
