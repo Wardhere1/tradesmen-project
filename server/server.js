@@ -9,5 +9,5 @@ app.listen(apiPort, () => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Hello from trades');
+  res.send('Hello from tradess');
 });
