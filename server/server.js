@@ -1,9 +1,11 @@
 import express from 'express';
 import pool from './db';
+import cors from 'cors';
 
 const app = express();
 
 app.use(express.json());
+app.use(cors.json());
 
 const apiPort = 4000;
 app.listen(apiPort, () => {
