@@ -4,7 +4,7 @@ INSERT INTO Customer_Table(
     email,
     phone_number,
     postcode,
-    services_id, 
+    services_id 
 )
 VALUES
 (
@@ -13,14 +13,5 @@ VALUES
     'Wardhere@gmail.com',
     123456789,
     'xxx xxx',
-    1,
-),
-
-(
-    'mohamed',
-    'khalaf',
-    'mok@gmail.com',
-    123456789,
-    'xxx xxx',
-    2,
+    1
 );

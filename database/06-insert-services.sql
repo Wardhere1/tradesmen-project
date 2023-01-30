@@ -1,7 +1,7 @@
 INSERT INTO Services_Table(
     services,
-    image_id,
-);
+    image_id
+)
 VALUES
 (
     'Plumber',

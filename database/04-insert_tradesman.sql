@@ -15,18 +15,10 @@ VALUES
     'Adan',
     'Wardhere@gmail.com',
     123456789,
+    'NW10',
     'software engineer',
     'i like pizza and beaing mok in UFC, he takes corn on the daily',
     '01',
     1
-),
-(
-    'mohamed',
-    'khalaf',
-    'mok@gmail.com',
-    123456789,
-    'software engineer',
-    'i like salad, wardhere is the goat in UFC! ',
-    '02',
-    1
 );
+
