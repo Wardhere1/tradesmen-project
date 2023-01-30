@@ -1,12 +1,8 @@
 FROM postgres:latest
 
-ENV POSTGRES_DB mydb
+ENV POSTGRES_PASSWORD password
 
-ENV POSTGRES_USER myuser
-
-ENV POSTGRES_PASSWORD mypassword
-
-EXPOSE 5432
+ENV POSTGRES_DB tradematch
 
 COPY ./*.sql /docker-entrypoint-initdb.d/
 
