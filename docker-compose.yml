@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  database:
+    container_name: database-container
+    image: database-image:latest
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_DB=tradematch
+      - POSTGRES_USERNAME=postgres
+      - POSTGRES_PASSWORD=password
+    expose:
+      - '5432'
+
+  server:
+    container_name: server-container
+    image: server-image:latest
+    depends_on:
+      - database
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - '4000:4000'
+    expose:
+      - '5432'
+
+  client:
+    container_name: client-container
+    image: client-image:latest
+    depends_on:
+      - server
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+
+  adminer:
+    image: adminer:latest
+    container_name: adminer_container
+    ports:
+      - 8080:8080
