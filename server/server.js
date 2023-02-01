@@ -7,11 +7,12 @@ const app = express();
 
 app.use(express.json());
 // app.use(cors.json());
-app.use(
-  cors({
-    origin: '*',
-  })
-);
+// app.use(
+//   cors({
+//     origin: '*',
+//   })
+// );
+app.use(cors());
 
 const apiPort = 4000;
 app.listen(apiPort, () => {
@@ -19,19 +20,19 @@ app.listen(apiPort, () => {
 });
 
 app.get('/', (req, res) => {
+  console.log('GET / called');
   res.send('Hello from trade');
 });
 
 app.get('/tradesman', async (req, res) => {
   try {
-    console.log('1');
+    console.log('GET /tradesman called, querying trademan_table');
     const newTradesman = await pool.query('SELECT * FROM trademan_table');
-    console.log('2');
-    console.log('Function called');
-    console.log(newTradesman);
-    res.send('Hello from trade' + newTradesman);
+    console.log(`Data successfully fetched, newTradesman: ${JSON.stringify(newTradesman, null, 4)}`);
+    res.status(200).json(newTradesman);
   } catch (error) {
-    console.log(error);
+    console.log('Error in GET /tradesman: ', error);
+    res.status(500).json({ message: 'There was an internal server error, please contact support' });
   }
 });
 
