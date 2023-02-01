@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+const serverUrl = process.env.REACT_APP_SERVER_URL;
+console.log(`Server url is: ${serverUrl}`);
 
 function App() {
   return (
