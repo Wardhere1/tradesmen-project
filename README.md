@@ -38,3 +38,27 @@ _Prototype Document for website_ - https://www.figma.com/file/k1GD3Coyf1d30zacQB
 _MOSCOW board link_ - https://jamboard.google.com/d/1oHwaZbQnF0tYgzHBhX7HszIk5y_8cXS8DFkxzOOtyWs/viewer?f=2
 
 ## Web application instructions
+
+## Running Docker Compose
+
+Run the ./rebuild-docker-containers.sh script to run the below commands:
+
+- remove the old containers, if any
+docker compose down
+
+- build and run the containers
+docker compose up --build -d
+
+- see whats up
+docker ps -a
+
+## Running Server Locally
+
+Run the ./rebuild-server-locally.sh script to run the below commands (This ensures that our local machines can read the env variables that we set up before running the server):
+
+source .env
+
+node server/server.js
+
+
+

@@ -43,8 +43,4 @@ services:
     environment:
       - REACT_APP_SERVER_URL=$SERVER_PUBLIC_HOST:$SERVER_PUBLIC_PORT
 
-  adminer:
-    image: adminer:latest
-    container_name: adminer_container
-    ports:
-      - '8080:8080'
+ 
