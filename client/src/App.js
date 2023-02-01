@@ -5,17 +5,19 @@ const serverUrl = process.env.REACT_APP_SERVER_URL;
 console.log(`Server url is: ${serverUrl}`);
 
 function App() {
-  const [trademanData, setTrademenData] = useState([]);
+  const [trademanData, setTrademenData] = useState();
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch('http://localhost:4000/');
-      const data = await response.json();
+      const response = await fetch('http://localhost:4000/tradesman');
+      const data = await response.json()
+      const tradesmanFetchedData = data.rows
+      console.log('this is the data:' + JSON.stringify(tradesmanFetchedData,null,4))
       setTrademenData(data);
     }
     fetchData();
   }, []);
 
-  console.log(trademanData);
+  // console.log(trademanData);
   return (
     <div className="App">
       <header className="App-header">
