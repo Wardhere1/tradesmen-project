@@ -14,12 +14,11 @@ function App() {
       const data = await response.json()
       const tradesmanFetchedData = data.rows
       console.log('this is the data:' + JSON.stringify(tradesmanFetchedData,null,4))
-      setTrademenData(data);
+      setTrademenData(tradesmanFetchedData);
     }
     fetchData();
   }, []);
 
-  // console.log(trademanData);
   return (
     <div className="App">
       <ServicePage />

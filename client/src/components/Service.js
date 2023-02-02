@@ -3,8 +3,8 @@ import React from 'react'
 export const Service = ({item}) => {
   return (
     <div>
-        <img src='https://cdn-icons-png.flaticon.com/128/307/307943.png'/>
-        <h3>{item}</h3>
+        <img src={item.image_url}/>
+        <h3>{item.services}</h3>
     </div>
   )
 }
