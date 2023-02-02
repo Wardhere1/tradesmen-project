@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 import { ServicesList } from '../ServicesList'
 
 export const ServicePage = () => {
-    const [servicesData,setServicesData]=useState()
+    const [servicesData,setServicesData]=useState([])
 
     useEffect(() => {
         async function fetchData() {
@@ -15,7 +15,8 @@ export const ServicePage = () => {
         fetchData();
       }, []);
 
-    
+      console.log(servicesData)
+ 
   return (
     <ServicesList servicesData={servicesData}/>
   )
