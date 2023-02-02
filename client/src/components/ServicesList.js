@@ -3,7 +3,7 @@ import { Service } from './Service'
 
 export const ServicesList = ({ servicesData }) => {
     return (
-        <div>
+        <div className='services-list'>
             {servicesData.map((item) => {
                 return (
                     <Service item={item} />
