@@ -30,18 +30,27 @@
   cursor: pointer;
 }
 
-.navbar-contiainer{
+.navbar-container{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  height: 75px;
+}
+
+.logo{
+  height: 70px;
+  margin-left: 20px;
 }
 
 .navbar-links{
-  /* width: 500%; */
-  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
 }
 
 .sign-up-button{
-
+  margin-right: 20px;
 }
+

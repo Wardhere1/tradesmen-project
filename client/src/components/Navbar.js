@@ -3,7 +3,7 @@ import React from 'react'
 function Navbar() {
     return (
         <div className='navbar-container'>
-            <img className='logo' />
+            <img className='logo' src='https://cdn-icons-png.flaticon.com/128/307/307924.png'/>
             <div className='navbar-links' >
                 <a className='links'>Services</a>
                 <a className='links'>Home</a>
