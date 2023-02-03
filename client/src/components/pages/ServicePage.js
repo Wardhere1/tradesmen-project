@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { ServicesList } from '../ServicesList'
+import Navbar from '../Navbar'
 
 export const ServicePage = () => {
     const [servicesData, setServicesData] = useState([])
@@ -17,6 +18,7 @@ export const ServicePage = () => {
 
     return (
         <div className='service-container'>
+            <Navbar/>
             <ServicesList servicesData={servicesData} />
         </div>
     )

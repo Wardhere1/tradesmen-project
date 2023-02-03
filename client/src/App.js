@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { ServicePage } from './components/pages/ServicePage';
+import Navbar from './components/Navbar';
 
 const serverUrl = process.env.REACT_APP_SERVER_URL;
 console.log(`Server url is: ${serverUrl}`);
