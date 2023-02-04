@@ -1,4 +1,4 @@
-.services-list{
+.services-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   margin-bottom: 250px;
 }
 
-.service-container{
+.service-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,7 +17,7 @@
   height: 100vh;
 }
 
-.service-card{
+.service-card {
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -25,13 +25,13 @@
   flex-direction: column;
 }
 
-.service-card:hover{
+.service-card:hover {
   background-color: aquamarine;
   transition: all 0.8s;
   cursor: pointer;
 }
 
-.navbar-container{
+.navbar-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -39,19 +39,19 @@
   height: 75px;
 }
 
-.logo{
-  height: 70px;
+.logo {
+  height: 100px;
+  width: 100px;
   margin-left: 20px;
 }
 
-.navbar-links{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 500px;
+.navbar-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
 }
 
-.sign-up-button{
+.sign-up-button {
   margin-right: 20px;
 }
-
