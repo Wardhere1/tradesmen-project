@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+.App{
+  background: radial-gradient(circle, rgba(255,244,249,1) 0%, rgba(80,160,96,1) 100%);
+  /* background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 41%, rgba(79,255,141,1) 100%); */
+  /* font-family: 'Fugaz One'; */
+  font-family: 'Barlow', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.services-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 650px;
+  border: solid black;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  box-shadow: 28px 28px 5px 0px rgba(0,0,0,0.75);
+  margin-top: 30px;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.service-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  height: 100vh;
+}
+
+.service-card {
+  padding: 20px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  border: solid black 0.2px;
+  margin: 20px;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.service-card:hover {
+  background-color: aquamarine;
+  transition: all 0.8s;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  border-bottom: solid black 0.5px;
+  position: sticky;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.logo {
+  width: 225px;
+  margin-left: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 700px;
+  margin-right: 130px;
+}
+
+.sign-up-button {
+  margin-right: 40px;
+}
+
+button{
+  font-family:'Barlow', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+button:hover{
+  background:  aquamarine;
+  transition: all 0.4s;
+  color: black;
+}
+
+a {
+  background-image: linear-gradient(
+    to right,
+    aquamarine,
+    aquamarine 50%,
+    black 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before {
+  content: '';
+  background:  aquamarine;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before {
+  width:100%;
+}
+
+a{
+  font-size: 20px;
+}
+
+.service-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50px;
+}
+
+h2{
+  margin: 0px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px;
+}
+
+h4{
+  margin: 5px px 0px 0px; 
+  padding: 0px 0px 0px 0px;
+}
+
+p{
+  margin: 0px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px;
 }
