@@ -14,7 +14,7 @@
   max-width: 650px;
   border: solid black;
   border-radius: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   box-shadow: 28px 28px 5px 0px rgba(0,0,0,0.75);
   margin-top: 30px;
   padding: 20px;
@@ -144,7 +144,7 @@ a{
   margin-top: 50px;
 }
 
-h2{
+/* h2{
   margin: 0px 0px 0px 0px; 
   padding: 0px 0px 0px 0px;
 }
@@ -157,4 +157,4 @@ h4{
 p{
   margin: 0px 0px 0px 0px; 
   padding: 0px 0px 0px 0px;
-}
+} */
