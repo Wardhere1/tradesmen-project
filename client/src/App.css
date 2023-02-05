@@ -2,7 +2,8 @@
   background: radial-gradient(circle, rgba(255,244,249,1) 0%, rgba(80,160,96,1) 100%);
   /* background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 41%, rgba(79,255,141,1) 100%); */
   /* font-family: 'Fugaz One'; */
-  font-family: 'Barlow', sans-serif;
+  /* font-family: 'Barlow', sans-serif; */
+  font-family: 'Kanit', sans-serif;
 }
 
 .services-list {
@@ -140,6 +141,7 @@ a{
   align-items: center;
   flex-direction: column;
   height: 50px;
+  margin-top: 50px;
 }
 
 h2{
