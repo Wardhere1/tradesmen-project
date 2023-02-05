@@ -59,6 +59,7 @@
 .logo {
   width: 225px;
   margin-left: 40px;
+  cursor: pointer;
 }
 
 .navbar-links {
@@ -82,6 +83,7 @@ button{
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 button:hover{
@@ -93,8 +95,8 @@ button:hover{
 a {
   background-image: linear-gradient(
     to right,
-    aquamarine,
-    aquamarine 50%,
+    white,
+    white 50%,
     black 50%
   );
   background-size: 200% 100%;
@@ -105,11 +107,12 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 a:before {
   content: '';
-  background:  aquamarine;
+  background:  white;
   display: block;
   position: absolute;
   bottom: -3px;
