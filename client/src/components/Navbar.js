@@ -12,7 +12,7 @@ function Navbar() {
                 <a className="links">Home</a>
                 <a className="links">About-Us </a>
             </div>
-            <button className="sign-up-button">Sign-Up</button>
+            <button className="Tradesman-sign-up-button"> Tradesman Sign-Up</button>
         </div>
     );
 }

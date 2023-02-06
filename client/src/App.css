@@ -1,9 +1,9 @@
 .App{
   background: radial-gradient(circle, rgba(255,244,249,1) 0%, rgba(80,160,96,1) 100%);
   /* background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 41%, rgba(79,255,141,1) 100%); */
-  /* font-family: 'Fugaz One'; */
+  font-family: 'Fugaz One';
   /* font-family: 'Barlow', sans-serif; */
-  font-family: 'Kanit', sans-serif;
+  /* font-family: 'Kanit', sans-serif; */
 }
 
 .services-list {
@@ -68,15 +68,15 @@
   justify-content: space-around;
   align-items: center;
   width: 700px;
-  margin-right: 130px;
+  margin-right: 60px;
 }
 
-.sign-up-button {
+.Tradesman-sign-up-button {
   margin-right: 40px;
 }
 
 button{
-  font-family:'Barlow', sans-serif;
+  font-family:'Fugaz One';
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
