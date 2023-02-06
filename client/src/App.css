@@ -1,11 +1,32 @@
 .App{
-  background: radial-gradient(circle, rgba(255,244,249,1) 0%, rgba(80,160,96,1) 100%);
-  /* background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 41%, rgba(79,255,141,1) 100%); */
+  /* background: radial-gradient(circle, rgba(255,244,249,1) 0%, rgba(80,160,96,1) 100%); */
+  background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 41%, rgba(79,255,141,1) 100%);
   font-family: 'Fugaz One';
+  height:100vh;
+  overflow: auto;
   /* font-family: 'Barlow', sans-serif; */
   /* font-family: 'Kanit', sans-serif; */
 }
 
+
+.button-homepage1 {
+  position:absolute; 
+  top: 400px;
+  left: 200px;
+}
+.button-homepage2 {
+  position:absolute; 
+  top: 400px;
+  left: 400px;
+}
+
+
+.Homepage-container{
+  position: relative;
+  text-align: center;
+  color:black;
+
+}
 .services-list {
   display: flex;
   justify-content: center;
@@ -81,8 +102,8 @@ button{
   padding-right: 20px;
   border-radius: 10px;
   border: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 18px;
   cursor: pointer;
 }
@@ -142,6 +163,11 @@ a{
   flex-direction: column;
   height: 50px;
   margin-top: 50px;
+}
+
+.Trademanimg{
+object-fit: contain; 
+opacity: 0.9;
 }
 
 /* h2{

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { ServicePage } from './components/pages/ServicePage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HomePage } from './components/pages/HomePage';
 import Navbar from './components/Navbar';
 
 const serverUrl = process.env.REACT_APP_SERVER_URL;
@@ -11,10 +13,10 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch('http://localhost:4000/tradesman')
-      const data = await response.json()
-      const tradesmanFetchedData = data.rows
-      console.log('this is the data:' + JSON.stringify(tradesmanFetchedData,null,4))
+      const response = await fetch('http://localhost:4000/tradesman');
+      const data = await response.json();
+      const tradesmanFetchedData = data.rows;
+      console.log('this is the data:' + JSON.stringify(tradesmanFetchedData, null, 4));
       setTrademenData(tradesmanFetchedData);
     }
     fetchData();
@@ -22,7 +24,11 @@ function App() {
 
   return (
     <div className="App">
-      <ServicePage />
+     <Navbar/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<ServicePage />} />
+      </Routes>
     </div>
   );
 }
