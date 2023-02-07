@@ -4,6 +4,7 @@ import { ServicePage } from './components/pages/ServicePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage } from './components/pages/HomePage';
 import Navbar from './components/Navbar';
+import {CustomerPage} from './components/pages/CustomerPage'
 
 const serverUrl = process.env.REACT_APP_SERVER_URL;
 console.log(`Server url is: ${serverUrl}`);
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicePage />} />
+        <Route path='/customer-sign-up' element={<CustomerPage/>} />
       </Routes>
     </div>
   );
