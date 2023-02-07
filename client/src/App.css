@@ -52,7 +52,8 @@
   border-radius: 20px;
 }
 .quotes:hover{
-  background-color: aquamarine;
+  background-color: #0099ef;
+  color: white;
   transition: all 0.8s;
   cursor: pointer;
   border-radius: 20px
@@ -159,9 +160,9 @@ button{
 }
 
 button:hover{
-  background:  aquamarine;
+  background:  #0099ef;
   transition: all 0.4s;
-  color: black;
+  color: white;
 }
 
 a {
