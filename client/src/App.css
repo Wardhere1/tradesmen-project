@@ -34,6 +34,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: absolute;
+  bottom: 4px;
+  background-color: white;
 }
 
 .quote-container{
@@ -42,8 +45,25 @@
   align-items: center;
 }
 
-.quotes-info{
+/* .quotes-info{
   margin-right: 60px;
+} */
+.quotes{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 10px;
+  /* border: solid black 0.2px; */
+  border-radius: 20px
+}
+.quotes:hover{
+  background-color: aquamarine;
+  transition: all 0.8s;
+  cursor: pointer;
+  border-radius: 20px
+}
+.quote-image{
+  height: 100px;
 }
 
 .homepage-container{
