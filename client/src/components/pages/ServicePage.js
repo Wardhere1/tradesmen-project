@@ -19,7 +19,6 @@ export const ServicePage = () => {
 
     return (
         <div className='service-container'>
-            <Navbar />
             <HowItWorks />
             <ServicesList servicesData={servicesData} />
         </div>

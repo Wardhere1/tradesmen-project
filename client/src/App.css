@@ -1,10 +1,82 @@
 .App{
-  background: radial-gradient(circle, rgba(255,244,249,1) 0%, rgba(80,160,96,1) 100%);
+  /* background: radial-gradient(circle, rgba(255,244,249,1) 0%, rgba(80,160,96,1) 100%); */
   /* background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 41%, rgba(79,255,141,1) 100%); */
-  font-family: 'Fugaz One';
+  /* font-family: 'Fugaz One'; */
+  height:100vh;
+  overflow: auto;
+  font-family: 'Roboto Slab', serif;
+  color: black;
   /* font-family: 'Barlow', sans-serif; */
   /* font-family: 'Kanit', sans-serif; */
 }
+
+.button-homepage-1 {
+  position:absolute; 
+  top: 500px;
+  left: 200px;
+}
+.button-homepage-2 {
+  position:absolute; 
+  top: 500px;
+  left: 450px;
+}
+
+.quotes-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.quote-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .quotes-info{
+  margin-right: 60px;
+} */
+.quotes{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 10px;
+  /* border: solid black 0.2px; */
+  border-radius: 20px;
+}
+.quotes:hover{
+  background-color: #0099ef;
+  color: white;
+  transition: all 0.8s;
+  cursor: pointer;
+  border-radius: 20px
+}
+.quote-image{
+  height: 100px;
+}
+
+.homepage-container{
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.homepage-heading{
+  position:absolute; 
+  top: 300px;
+  left: 200px;
+  width: 1000px;
+  text-align: left;
+  color: white;
+}
+
 
 .services-list {
   display: flex;
@@ -76,28 +148,28 @@
 }
 
 button{
-  font-family:'Fugaz One';
+  font-family: 'Roboto Slab', serif;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
   border: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 18px;
   cursor: pointer;
 }
 
 button:hover{
-  background:  aquamarine;
+  background:  #0099ef;
   transition: all 0.4s;
-  color: black;
+  color: white;
 }
 
 a {
   background-image: linear-gradient(
     to right,
-    white,
-    white 50%,
+    black,
+    black 50%,
     black 50%
   );
   background-size: 200% 100%;
@@ -113,7 +185,7 @@ a {
 
 a:before {
   content: '';
-  background:  white;
+  background:  black;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -144,6 +216,11 @@ a{
   margin-top: 50px;
 }
 
+.Trademanimg{
+object-fit: contain; 
+opacity: 0.9;
+}
+
 /* h2{
   margin: 0px 0px 0px 0px; 
   padding: 0px 0px 0px 0px;
@@ -158,3 +235,4 @@ p{
   margin: 0px 0px 0px 0px; 
   padding: 0px 0px 0px 0px;
 } */
+
