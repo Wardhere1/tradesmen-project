@@ -1,32 +1,48 @@
 .App{
   /* background: radial-gradient(circle, rgba(255,244,249,1) 0%, rgba(80,160,96,1) 100%); */
-  background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 41%, rgba(79,255,141,1) 100%);
-  font-family: 'Fugaz One';
+  /* background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 41%, rgba(79,255,141,1) 100%); */
+  /* font-family: 'Fugaz One'; */
   height:100vh;
   overflow: auto;
+  font-family: 'Roboto Slab', serif;
+  color: white;
   /* font-family: 'Barlow', sans-serif; */
   /* font-family: 'Kanit', sans-serif; */
 }
 
-
-.button-homepage1 {
+.button-homepage-1 {
   position:absolute; 
-  top: 400px;
+  top: 500px;
   left: 200px;
 }
-.button-homepage2 {
+.button-homepage-2 {
   position:absolute; 
-  top: 400px;
-  left: 400px;
+  top: 500px;
+  left: 450px;
 }
 
+.homepage-video{
+  /* position:absolute; 
+  top: 200px;
+  left: 900px; */
+  object-fit: contain;
+  height: 1000px;
+  /* border-radius: 70%; */
+}
 
-.Homepage-container{
+.homepage-container{
   position: relative;
   text-align: center;
-  color:black;
-
 }
+
+.homepage-heading{
+  position:absolute; 
+  top: 300px;
+  left: 200px;
+  width: 700px;
+  text-align: left;
+}
+
 .services-list {
   display: flex;
   justify-content: center;
@@ -97,7 +113,7 @@
 }
 
 button{
-  font-family:'Fugaz One';
+  font-family: 'Roboto Slab', serif;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
@@ -117,8 +133,8 @@ button:hover{
 a {
   background-image: linear-gradient(
     to right,
-    white,
-    white 50%,
+    black,
+    black 50%,
     black 50%
   );
   background-size: 200% 100%;
@@ -134,7 +150,7 @@ a {
 
 a:before {
   content: '';
-  background:  white;
+  background:  black;
   display: block;
   position: absolute;
   bottom: -3px;
