@@ -21,19 +21,6 @@
   left: 450px;
 }
 
-@media (min-aspect-ratio: 16/9) {
-    .homepage-container {
-      width: 100%;
-      height: auto;
-    }
-  }
-@media (max-aspect-ratio: 16/9) {
-    .homepage-container {
-      width: auto;
-      height: 100%;
-    }
-}
-
 .quotes-section{
   display: flex;
   flex-direction: column;
@@ -41,8 +28,10 @@
   align-items: center;
   width: 100%;
   position: absolute;
-  bottom: 4px;
+  bottom: 1px;
   background-color: white;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .quote-container{
@@ -60,7 +49,7 @@
   flex-direction: column;
   padding: 10px;
   /* border: solid black 0.2px; */
-  border-radius: 20px
+  border-radius: 20px;
 }
 .quotes:hover{
   background-color: aquamarine;
