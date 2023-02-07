@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import videoBg from '../assets/new-background - 3.mp4';
+import videoBg from '../assets/new-background-2.mp4';
 import Quote from '../Quote';
 
 export const HomePage = () => {
