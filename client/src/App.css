@@ -224,11 +224,11 @@ a {
   height: 650px;
   align-items: center;
   border: solid black;
-  background-color: #0099ef;
+  background-color: white;
   padding: 50px;
   border-radius: 20px;
-  opacity: 0.96;
-  border: solid white;
+  /* border: solid #0099ef 10px; */
+  box-shadow: 28px 28px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .form-input {
@@ -284,12 +284,12 @@ a {
 .customer-submit-button{
   position: absolute;
   top: 720px;
-  border: solid white 0.2px;
+  border: solid black 0.2px;
 }
 
 .form-heading{
   position: absolute;
   top: 150px;
-  color: white;
+  color: black;
   opacity: 1;
 }
