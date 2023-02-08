@@ -26,9 +26,9 @@ app.get('/', (req, res) => {
 
 app.get('/tradesman', async (req, res) => {
   try {
-    console.log('GET /tradesman called, querying trademan_table');
+    // console.log('GET /tradesman called, querying trademan_table');
     const newTradesman = await pool.query('SELECT * FROM trademan_table');
-    console.log(`Data successfully fetched, newTradesman: ${JSON.stringify(newTradesman, null, 4)}`);
+    // console.log(`Data successfully fetched, newTradesman: ${JSON.stringify(newTradesman, null, 4)}`);
     res.status(200).json(newTradesman);
   } catch (error) {
     console.log('Error in GET /tradesman: ', error);
@@ -38,9 +38,9 @@ app.get('/tradesman', async (req, res) => {
 
 app.get('/services', async (req, res) => {
   try {
-    console.log('GET /services called, querying services_table');
+    // console.log('GET /services called, querying services_table');
     const services = await pool.query('SELECT * FROM services_table');
-    console.log(`Data successfully fetched, services: ${JSON.stringify(services, null, 4)}`);
+    // console.log(`Data successfully fetched, services: ${JSON.stringify(services, null, 4)}`);
     res.status(200).json(services);
   } catch (error) {
     console.log('Error in GET /services: ', error);
@@ -50,12 +50,12 @@ app.get('/services', async (req, res) => {
 
 app.get('/customer-sign-up', async (req, res) => {
   try {
-    console.log('GET /customer called, querying customer_table');
+    // console.log('GET /customer called, querying customer_table');
     const customer = await pool.query('SELECT * FROM customer_table');
-    console.log(`Data successfully fetched, services: ${JSON.stringify(customer, null, 4)}`);
+    // console.log(`Data successfully fetched, services: ${JSON.stringify(customer, null, 4)}`);
     res.status(200).json(customer);
   } catch (error) {
-    console.log('Error in GET /services: ', error);
+    console.log('Error in GET /customer: ', error);
     res.status(500).json({ message: 'There was an internal server error, please contact support' });
   }
 });
@@ -82,6 +82,7 @@ app.post('/tradesman', async (req, res) => {
 
 app.post('/customer-sign-up', async (req, res) => {
   try {
+    console.log(req.body)
     const { firstname,surname,email,mobile_number,postcode,brief_description,additional_comments } = req.body;
     const newCustomer = await pool.query('INSERT INTO customer_table (firstname,surname,email,mobile_number,postcode,brief_description,additional_comments) VALUES($1,$2,$3,$4,$5,$6,$7) RETURNING* ;', [firstname,surname,email,mobile_number,postcode,brief_description,additional_comments]);
     res.json(newCustomer);
