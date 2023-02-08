@@ -48,6 +48,18 @@ app.get('/services', async (req, res) => {
   }
 });
 
+app.get('/customer-sign-up', async (req, res) => {
+  try {
+    console.log('GET /customer called, querying customer_table');
+    const customer = await pool.query('SELECT * FROM customer_table');
+    console.log(`Data successfully fetched, services: ${JSON.stringify(customer, null, 4)}`);
+    res.status(200).json(customer);
+  } catch (error) {
+    console.log('Error in GET /services: ', error);
+    res.status(500).json({ message: 'There was an internal server error, please contact support' });
+  }
+});
+
 // app.get('/tradesman', (req, res) => {
 //   try {
 //     console.log('Success');
@@ -67,6 +79,16 @@ app.post('/tradesman', async (req, res) => {
   }
 });
 // CREATE
+
+app.post('/customer-sign-up', async (req, res) => {
+  try {
+    const { firstname,surname,email,mobile_number,postcode,brief_description,additional_comments } = req.body;
+    const newCustomer = await pool.query('INSERT INTO customer_table (firstname,surname,email,mobile_number,postcode,brief_description,additional_comments) VALUES($1,$2,$3,$4,$5,$6,$7) RETURNING* ;', [firstname,surname,email,mobile_number,postcode,brief_description,additional_comments]);
+    res.json(newCustomer);
+  } catch (err) { 
+    console.error(err.message);
+  }
+});
 
 // UPDATE
 

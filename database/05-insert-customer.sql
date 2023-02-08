@@ -1,17 +1,19 @@
 INSERT INTO Customer_Table(
     firstname,
-    surename,
+    surname,
     email,
-    phone_number,
+    mobile_number,
     postcode,
-    services_id 
+    brief_description,
+    additional_comments
 )
 VALUES
 (
     'wardhere',
     'Adan',
     'Wardhere@gmail.com',
-    123456789,
+    12345,
     'xxx xxx',
-    1
+    'sadasdsadasdsdas',
+    'sadasdsadsad'
 );
