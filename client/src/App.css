@@ -28,10 +28,10 @@
   align-items: center;
   width: 100%;
   position: absolute;
-  bottom: 1px;
+  bottom: 0px;
   background-color: white;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  /* padding-top: 20px;
+  padding-bottom: 40px; */
 }
 
 .quote-container {
@@ -166,7 +166,7 @@ button:hover {
 }
 
 a {
-  background-image: linear-gradient(to right, black, black 50%, black 50%);
+  background-image: linear-gradient(to right, #0099ef, #0099ef 50%, black 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -180,7 +180,7 @@ a {
 
 a:before {
   content: '';
-  background: black;
+  background: #0099ef;
   display: block;
   position: absolute;
   bottom: -3px;
