@@ -1,13 +1,8 @@
 .App {
-  /* background: radial-gradient(circle, rgba(255,244,249,1) 0%, rgba(80,160,96,1) 100%); */
-  /* background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 41%, rgba(79,255,141,1) 100%); */
-  /* font-family: 'Fugaz One'; */
   height: 100vh;
   overflow: auto;
   font-family: 'Roboto Slab', serif;
   color: black;
-  /* font-family: 'Barlow', sans-serif; */
-  /* font-family: 'Kanit', sans-serif; */
 }
 
 .button-homepage-1 {
@@ -30,8 +25,6 @@
   position: absolute;
   bottom: 0px;
   background-color: white;
-  /* padding-top: 20px;
-  padding-bottom: 40px; */
 }
 
 .quote-container {
@@ -40,21 +33,17 @@
   align-items: center;
 }
 
-/* .quotes-info{
-  margin-right: 60px;
-} */
 .quotes {
   display: flex;
   flex: 1;
   flex-direction: column;
   padding: 10px;
-  /* border: solid black 0.2px; */
   border-radius: 20px;
 }
 .quotes:hover {
   background-color: #0099ef;
   color: white;
-  transition: all 0.8s;
+  transition: all 0.6s;
   cursor: pointer;
   border-radius: 20px;
 }
@@ -85,18 +74,25 @@
   max-width: 650px;
   border: solid black;
   border-radius: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   box-shadow: 28px 28px 5px 0px rgba(0, 0, 0, 0.75);
-  margin-top: 30px;
+  /* margin-top: 30px; */
   padding: 20px;
+  background-color: white;
+  opacity: 0.9;
+  padding-bottom: 60px;
 }
 
 .service-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  background-image: url('./components/assets/paint-1.jpg');
+  background-position: 25% 110%;
+  background-size: 30%;
+  position: relative;
 }
 
 .service-card {
@@ -105,15 +101,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid black 0.2px;
+  border: solid black 2px;
   margin: 20px;
   border-radius: 20px;
+  color: black;
 }
 
 .service-card:hover {
-  background-color: aquamarine;
-  transition: all 0.8s;
+  background-color: #0099ef;
+  transition: all 0.6s;
   cursor: pointer;
+  color: white;
 }
 
 .navbar-container {
@@ -152,7 +150,7 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
-  border: none;
+  border: solid black 1px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 18px;
@@ -207,8 +205,9 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 50px;
-  margin-top: 50px;
+  color: black;
+  /* height: 50px; */
+  /* margin-top: 50px; */
 }
 
 .Trademanimg {
@@ -292,4 +291,9 @@ a {
   top: 150px;
   color: black;
   opacity: 1;
+}
+
+.next-button{
+  position: absolute;
+  top: 780px;
 }
