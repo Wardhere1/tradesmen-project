@@ -1,6 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 
 export const CustomerPage = () => {
+  const [customerInfo,setCustomerInfo] = useState({Firstname:'',Surname:'',Email:'',MobileNumber:'',Postcode:'',CustomerProblem:'',AdditionalComments:''});
   return (
     <div className="customer-page-container">
       <form className="form-container">
