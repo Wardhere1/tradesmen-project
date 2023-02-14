@@ -5,7 +5,8 @@ INSERT INTO Customer_Table(
     mobile_number,
     postcode,
     brief_description,
-    additional_comments
+    additional_comments,
+    customer_service
 )
 VALUES
 (
@@ -15,5 +16,6 @@ VALUES
     12345,
     'xxx xxx',
     'sadasdsadasdsdas',
-    'sadasdsadsad'
+    'sadasdsadsad',
+    'plumbing'
 );

@@ -11,10 +11,11 @@ export const CustomerPage = () => {
     postcode: '',
     brief_description: '',
     additional_comments: '',
+    customer_service: '',
   });
 
   const onSubmitHandler = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
     try {
       const response = await fetch('http://localhost:4000/customer-sign-up', {
         method: 'POST',
@@ -36,8 +37,8 @@ export const CustomerPage = () => {
     });
   };
 
-  console.log(customerInfo)
-  console.log(JSON.stringify(customerInfo))
+  console.log(customerInfo);
+  console.log(JSON.stringify(customerInfo));
   return (
     <div className="customer-page-container">
       <form className="form-container">
@@ -73,6 +74,14 @@ export const CustomerPage = () => {
             className="customer-description"
             onChange={handleChange}
           ></textarea>
+          <select  onChange={handleChange} name="customer_service" className="form-input">
+            <option value="plumbing">plumbing</option>
+            <option value="cleaner">cleaner</option>
+            <option value="handyman">handyman</option>
+            <option value="painter">painter</option>
+            <option value="gas and electric">gas and electric</option>
+            <option value="masonry">masonry</option>
+          </select>
         </div>
         <button onClick={onSubmitHandler} type="submit" className="customer-submit-button">
           Submit
