@@ -6,12 +6,6 @@ import cors from 'cors';
 const app = express();
 
 app.use(express.json());
-// app.use(cors.json());
-// app.use(
-//   cors({
-//     origin: '*',
-//   })
-// );
 app.use(cors());
 
 const apiPort = 4000;
@@ -50,9 +44,9 @@ app.get('/services', async (req, res) => {
 
 app.get('/customer-sign-up', async (req, res) => {
   try {
-    // console.log('GET /customer called, querying customer_table');
+    console.log('GET /customer called, querying customer_table');
     const customer = await pool.query('SELECT * FROM customer_table');
-    // console.log(`Data successfully fetched, services: ${JSON.stringify(customer, null, 4)}`);
+    console.log(`Data successfully fetched, services: ${JSON.stringify(customer, null, 4)}`);
     res.status(200).json(customer);
   } catch (error) {
     console.log('Error in GET /customer: ', error);

@@ -4,48 +4,22 @@ import { useState } from 'react';
 
 export const CustomerPage = () => {
   const [customerInfo, setCustomerInfo] = useState({
-    Firstname: '',
-    Surname: '',
-    Email: '',
-    MobileNumber: 0,
-    Postcode: '',
-    CustomerProblem: '',
-    AdditionalComments: '',
+    firstname: '',
+    surname: '',
+    email: '',
+    mobile_number: 0,
+    postcode: '',
+    brief_description: '',
+    additional_comments: '',
   });
 
-  // console.log(customerInfo);
-
-  // const data = fetch('http://localhost:4000/customer-sign-up');
-  // console.log(data);
-
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   console.log(customerInfo);
-  //   const data = fetch('http://localhost:4000/customer-sign-up');
-  // console.log(data);
-
-  //   fetch('http://localhost:4000/customer-sign-up', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify(customerInfo),
-  //   })
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //     });
-  // };
   const onSubmitHandler = async (event) => {
-    event.preventDefault();
+    event.preventDefault()
     try {
       const response = await fetch('http://localhost:4000/customer-sign-up', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body),
+        body: JSON.stringify(customerInfo),
       });
       console.log(response);
     } catch (err) {
@@ -61,45 +35,46 @@ export const CustomerPage = () => {
       };
     });
   };
-  // console.log(customerInfo);
 
+  console.log(customerInfo)
+  console.log(JSON.stringify(customerInfo))
   return (
     <div className="customer-page-container">
-      <form onSubmit={onSubmitHandler} className="form-container">
+      <form className="form-container">
         <div className="form-input-container">
           <input
             onChange={handleChange}
-            placeholder="Firstname..."
-            name="Firstname"
+            placeholder="firstname..."
+            name="firstname"
             className="form-input"
             type="text"
           />
-          <input onChange={handleChange} placeholder="Surname..." name="Surname" className="form-input" type="text" />
-          <input onChange={handleChange} placeholder="Email..." name="Email" className="form-input" type="text" />
+          <input onChange={handleChange} placeholder="surname..." name="surname" className="form-input" type="text" />
+          <input onChange={handleChange} placeholder="email..." name="email" className="form-input" type="text" />
           <input
             onChange={handleChange}
-            placeholder="Mobile number..."
-            name="MobileNumber"
+            placeholder="mobile_number..."
+            name="mobile_number"
             className="form-input"
             type="text"
           />
-          <input onChange={handleChange} placeholder="Postcode..." name="Postcode" className="form-input" type="text" />
+          <input onChange={handleChange} placeholder="postcode..." name="postcode" className="form-input" type="text" />
         </div>
         <div className="form-text-area-container">
           <textarea
-            placeholder="Customer Problem..."
-            name="CustomerProblem"
+            placeholder="brief_description..."
+            name="brief_description"
             className="customer-description"
             onChange={handleChange}
           ></textarea>
           <textarea
-            placeholder="Additional Comments..."
-            name="AdditionalComments"
+            placeholder="additional_comments..."
+            name="additional_comments"
             className="customer-description"
             onChange={handleChange}
           ></textarea>
         </div>
-        <button type="submit" className="customer-submit-button">
+        <button onClick={onSubmitHandler} type="submit" className="customer-submit-button">
           Submit
         </button>
       </form>

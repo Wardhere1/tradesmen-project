@@ -95,9 +95,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('./components/assets/paint-1.jpg');
-  background-position: 25% 110%;
-  background-size: 30%;
+  background-image: url('./components/assets/1-unsplash.jpg');
+  /* background-position: 150%;
+  background-size: 95%; */
+  /* background-size: 50%; */
   position: relative;
 }
 
@@ -213,7 +214,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: black;
+  color: white;
   /* height: 50px; */
   /* margin-top: 50px; */
 }
