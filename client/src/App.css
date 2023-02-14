@@ -1,82 +1,70 @@
-.App{
-  /* background: radial-gradient(circle, rgba(255,244,249,1) 0%, rgba(80,160,96,1) 100%); */
-  /* background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 41%, rgba(79,255,141,1) 100%); */
-  /* font-family: 'Fugaz One'; */
-  height:100vh;
+.App {
+  height: 100vh;
   overflow: auto;
   font-family: 'Roboto Slab', serif;
   color: black;
-  /* font-family: 'Barlow', sans-serif; */
-  /* font-family: 'Kanit', sans-serif; */
 }
 
 .button-homepage-1 {
-  position:absolute; 
+  position: absolute;
   top: 500px;
   left: 200px;
 }
 .button-homepage-2 {
-  position:absolute; 
+  position: absolute;
   top: 500px;
   left: 450px;
 }
 
-.quotes-section{
+.quotes-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   position: absolute;
-  bottom: 1px;
+  bottom: 0px;
   background-color: white;
-  padding-top: 20px;
-  padding-bottom: 40px;
 }
 
-.quote-container{
+.quote-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* .quotes-info{
-  margin-right: 60px;
-} */
-.quotes{
+.quotes {
   display: flex;
   flex: 1;
   flex-direction: column;
   padding: 10px;
-  /* border: solid black 0.2px; */
   border-radius: 20px;
 }
-.quotes:hover{
+.quotes:hover {
   background-color: #0099ef;
   color: white;
-  transition: all 0.8s;
+  transition: all 0.6s;
   cursor: pointer;
-  border-radius: 20px
+  border-radius: 20px;
 }
-.quote-image{
+.quote-image {
   height: 100px;
 }
 
-.homepage-container{
+.homepage-container {
   position: relative;
   text-align: center;
   overflow: hidden;
 }
 
-.homepage-heading{
-  position:absolute; 
+.homepage-heading {
+  position: absolute;
   top: 300px;
   left: 200px;
   width: 1000px;
   text-align: left;
   color: white;
 }
-
 
 .services-list {
   display: flex;
@@ -86,19 +74,32 @@
   max-width: 650px;
   border: solid black;
   border-radius: 20px;
-  margin-bottom: 50px;
-  box-shadow: 28px 28px 5px 0px rgba(0,0,0,0.75);
-  margin-top: 30px;
+  margin-bottom: 100px;
+  box-shadow: 28px 28px 5px 0px rgba(0, 0, 0, 0.75);
+  /* margin-top: 30px; */
   padding: 20px;
+  background-color: white;
+  opacity: 1;
+  padding-bottom: 60px;
+  animation: fadeIn 2s;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 .service-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url('./components/assets/1-unsplash.jpg');
+  /* background-position: 150%;
+  background-size: 95%; */
+  /* background-size: 50%; */
+  position: relative;
 }
 
 .service-card {
@@ -107,15 +108,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid black 0.2px;
+  border: solid black 2px;
   margin: 20px;
   border-radius: 20px;
+  color: black;
 }
 
 .service-card:hover {
-  background-color: aquamarine;
-  transition: all 0.8s;
+  background-color: #0099ef;
+  transition: all 0.6s;
   cursor: pointer;
+  color: white;
+  transform: scale(1.08);
 }
 
 .navbar-container {
@@ -126,7 +130,10 @@
   height: 85px;
   border-bottom: solid black 0.5px;
   position: sticky;
-  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+  top: 0;
+  z-index: 100;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: white;
 }
 
 .logo {
@@ -140,38 +147,33 @@
   justify-content: space-around;
   align-items: center;
   width: 700px;
-  margin-right: 60px;
+  margin-right: 130px;
 }
 
 .Tradesman-sign-up-button {
   margin-right: 40px;
 }
 
-button{
+button {
   font-family: 'Roboto Slab', serif;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
-  border: none;
+  border: solid black 1px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 18px;
   cursor: pointer;
 }
 
-button:hover{
-  background:  #0099ef;
+button:hover {
+  background: #0099ef;
   transition: all 0.4s;
   color: white;
 }
 
 a {
-  background-image: linear-gradient(
-    to right,
-    black,
-    black 50%,
-    black 50%
-  );
+  background-image: linear-gradient(to right, #0099ef, #0099ef 50%, black 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -185,7 +187,7 @@ a {
 
 a:before {
   content: '';
-  background:  black;
+  background: #0099ef;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -196,43 +198,115 @@ a:before {
 }
 
 a:hover {
- background-position: 0;
+  background-position: 0;
 }
 
 a:hover::before {
-  width:100%;
+  width: 100%;
 }
 
-a{
+a {
   font-size: 20px;
 }
 
-.service-info{
+.service-info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 50px;
-  margin-top: 50px;
+  color: white;
+  /* height: 50px; */
+  /* margin-top: 50px; */
 }
 
-.Trademanimg{
-object-fit: contain; 
-opacity: 0.9;
+.Trademanimg {
+  object-fit: contain;
+  opacity: 0.9;
 }
 
-/* h2{
-  margin: 0px 0px 0px 0px; 
-  padding: 0px 0px 0px 0px;
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1000px;
+  height: 650px;
+  align-items: center;
+  border: solid black;
+  background-color: white;
+  padding: 50px;
+  border-radius: 20px;
+  /* border: solid #0099ef 10px; */
+  box-shadow: 28px 28px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-h4{
-  margin: 5px px 0px 0px; 
-  padding: 0px 0px 0px 0px;
+.form-input {
+  padding: 15px;
+  font-size: medium;
+  margin-bottom: 38px;
+  width: 400px;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  border: 1px solid black;
+  background-color: white;
 }
 
-p{
-  margin: 0px 0px 0px 0px; 
-  padding: 0px 0px 0px 0px;
-} */
+.form-input-container{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: start;
+  margin: 10px;
+  margin-top: 30px;
+}
 
+.form-text-area-container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  height: 500px;
+  width: 410px;
+  justify-content: start;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.customer-description{
+  height: 200px;
+  width: 400px;
+  font-size: medium;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.customer-page-container {
+  display: flex;
+  background-image: url('./components/assets/customer-background.jpg');
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.customer-submit-button{
+  position: absolute;
+  top: 720px;
+  border: solid black 0.2px;
+}
+
+.form-heading{
+  position: absolute;
+  top: 150px;
+  color: black;
+  opacity: 1;
+}
+
+.next-button{
+  position: absolute;
+  top: 780px;
+}
+
+.homepage-info-container{
+  animation: fadeIn 3s;
+}

@@ -21,6 +21,7 @@ export const ServicePage = () => {
         <div className='service-container'>
             <HowItWorks />
             <ServicesList servicesData={servicesData} />
+            <button className='next-button'>NEXT</button>
         </div>
     )
 }
