@@ -7,5 +7,6 @@ CREATE TABLE Customer_Table(
     postcode VARCHAR(10) NOT NULL,
     brief_description VARCHAR(500) NOT NULL,
     additional_comments VARCHAR(500) NOT NULL,
+    customer_service VARCHAR(500) NOT NULL,
     PRIMARY KEY(customer_id)
 );

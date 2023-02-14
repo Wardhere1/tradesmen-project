@@ -77,8 +77,8 @@ app.post('/tradesman', async (req, res) => {
 app.post('/customer-sign-up', async (req, res) => {
   try {
     console.log(req.body)
-    const { firstname,surname,email,mobile_number,postcode,brief_description,additional_comments } = req.body;
-    const newCustomer = await pool.query('INSERT INTO customer_table (firstname,surname,email,mobile_number,postcode,brief_description,additional_comments) VALUES($1,$2,$3,$4,$5,$6,$7) RETURNING* ;', [firstname,surname,email,mobile_number,postcode,brief_description,additional_comments]);
+    const { firstname,surname,email,mobile_number,postcode,brief_description,additional_comments,customer_service } = req.body;
+    const newCustomer = await pool.query('INSERT INTO customer_table (firstname,surname,email,mobile_number,postcode,brief_description,additional_comments,customer_service) VALUES($1,$2,$3,$4,$5,$6,$7,$8) RETURNING* ;', [firstname,surname,email,mobile_number,postcode,brief_description,additional_comments,customer_service]);
     res.json(newCustomer);
   } catch (err) { 
     console.error(err.message);
