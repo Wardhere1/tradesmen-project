@@ -97,8 +97,8 @@
   height: 100vh;
   background-image: url('./components/assets/1-unsplash.jpg');
   /* background-position: 150%;
-  background-size: 95%; */
-  /* background-size: 50%; */
+  /* background-size: 95%; */
+  /* background-size: 80%;  */
   position: relative;
 }
 
@@ -309,4 +309,45 @@ a {
 
 .homepage-info-container{
   animation: fadeIn 3s;
+}
+
+.confirmation-card{
+  border: solid black;
+  width: 50%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.confirmation-page-container{
+  border: solid black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmation-heading{
+  text-align: center;
+}
+
+.confirmation-details{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 600px;
+  border: solid black;
+}
+
+.container-banner{
+  width: 100%;
+  border: solid black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0099ef;
+  color: white;
 }

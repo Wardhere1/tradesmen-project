@@ -1,18 +1,11 @@
 import { json } from 'body-parser';
 import React from 'react';
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom";
 
-export const CustomerPage = () => {
-  const [customerInfo, setCustomerInfo] = useState({
-    firstname: '',
-    surname: '',
-    email: '',
-    mobile_number: 0,
-    postcode: '',
-    brief_description: '',
-    additional_comments: '',
-    customer_service: '',
-  });
+export const CustomerPage = ({ customerInfo, setCustomerInfo }) => {
+
+  const navigate = useNavigate()
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
@@ -74,7 +67,7 @@ export const CustomerPage = () => {
             className="customer-description"
             onChange={handleChange}
           ></textarea>
-          <select  onChange={handleChange} name="customer_service" className="form-input">
+          <select onChange={handleChange} name="customer_service" className="form-input">
             <option value="plumbing">plumbing</option>
             <option value="cleaner">cleaner</option>
             <option value="handyman">handyman</option>
@@ -83,7 +76,7 @@ export const CustomerPage = () => {
             <option value="masonry">masonry</option>
           </select>
         </div>
-        <button onClick={onSubmitHandler} type="submit" className="customer-submit-button">
+        <button onClick={()=> {{onSubmitHandler(); navigate('/customer-confirmation-page');}}} type="submit" className="customer-submit-button">
           Submit
         </button>
       </form>
