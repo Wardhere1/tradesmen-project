@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { ServicesList } from '../ServicesList'
 import Navbar from '../Navbar'
 import { HowItWorks } from '../HowItWorks'
+import { BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom";
 
 export const ServicePage = () => {
     const [servicesData, setServicesData] = useState([])
+    const navigate = useNavigate()
 
     useEffect(() => {
         async function fetchData() {
@@ -21,7 +23,7 @@ export const ServicePage = () => {
         <div className='service-container'>
             <HowItWorks />
             <ServicesList servicesData={servicesData} />
-            <button className='next-button'>NEXT</button>
+            <button onClick={() => navigate('/customer-sign-up')} className='next-button'>NEXT</button>
         </div>
     )
 }
