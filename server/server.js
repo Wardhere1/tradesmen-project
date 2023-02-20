@@ -44,12 +44,12 @@ app.get('/services', async (req, res) => {
 
 app.get('/customer-sign-up', async (req, res) => {
   try {
-    console.log('GET /customer called, querying customer_table');
+    // console.log('GET /customer called, querying customer_table');
     const customer = await pool.query('SELECT * FROM customer_table');
-    console.log(`Data successfully fetched, services: ${JSON.stringify(customer, null, 4)}`);
+    // console.log(`Data successfully fetched, services: ${JSON.stringify(customer, null, 4)}`);
     res.status(200).json(customer);
   } catch (error) {
-    console.log('Error in GET /customer: ', error);
+    // console.log('Error in GET /customer: ', error);
     res.status(500).json({ message: 'There was an internal server error, please contact support' });
   }
 });

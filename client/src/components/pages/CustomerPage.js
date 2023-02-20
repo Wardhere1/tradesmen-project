@@ -32,6 +32,7 @@ export const CustomerPage = ({ customerInfo, setCustomerInfo }) => {
 
   console.log(customerInfo);
   console.log(JSON.stringify(customerInfo));
+  
   return (
     <div className="customer-page-container">
       <form className="form-container">
@@ -76,7 +77,7 @@ export const CustomerPage = ({ customerInfo, setCustomerInfo }) => {
             <option value="masonry">masonry</option>
           </select>
         </div>
-        <button onClick={()=> {{onSubmitHandler(); navigate('/customer-confirmation-page');}}} type="submit" className="customer-submit-button">
+        <button onClick={()=> {{onSubmitHandler();navigate('/customer-confirmation-page');}}} type="submit" className="customer-submit-button">
           Submit
         </button>
       </form>

@@ -319,6 +319,10 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 20px 20px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  opacity: 0.8;
 }
 
 .confirmation-page-container{
@@ -327,6 +331,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('./components/assets/drill.jpg');
+  flex-direction: column;
+  background-size: 85%;
+  background-position: 55% 75%;
+  color: black;  
 }
 
 .confirmation-heading{
@@ -339,6 +348,8 @@ a {
   align-items: center;
   width: 600px;
   border: solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container-banner{
@@ -350,4 +361,9 @@ a {
   align-items: center;
   background-color: #0099ef;
   color: white;
+}
+
+.confirmation-page-header{
+  color: white;
+  text-decoration: underline;
 }
