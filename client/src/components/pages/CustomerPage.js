@@ -1,7 +1,5 @@
-import { json } from 'body-parser';
 import React from 'react';
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 export const CustomerPage = ({ customerInfo, setCustomerInfo }) => {
 
