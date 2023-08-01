@@ -10,7 +10,6 @@
     "array-flatten": "^1.1.1",
     "balanced-match": "^1.0.2",
     "binary-extensions": "^2.2.0",
-    "body-parser": "^1.20.1",
     "brace-expansion": "^1.1.11",
     "braces": "^3.0.2",
     "bytes": "^3.1.2",
@@ -93,6 +92,7 @@
     "vary": "^1.1.2"
   },
   "devDependencies": {
+    "cypress": "^12.7.0",
     "react-router-dom": "^6.8.0"
   },
   "scripts": {
