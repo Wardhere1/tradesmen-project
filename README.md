@@ -25,6 +25,8 @@ _Our Product_ - is a trusted, local tradesmen provider that offers a variety of 
 
 **[Mohamed Khalaf: Dev](https://github.com/MohamedKhalaf92)** - Leader of the new world order (Mogul).
 
+**[Khalid Nur: Dev](https://github.com/Khalid4555)** - Leader of people affairs (Tycoon).
+
 ## Important DOCUMENTS - LINKS BELOW TO REFER TO .
 
 _Project Document link_ - https://docs.google.com/document/d/1jiVs3CpTkgytARCGZEnJKCALyMyT7UNK22APEVvKTTE/edit#
