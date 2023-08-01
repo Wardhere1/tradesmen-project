@@ -12,8 +12,8 @@
 }
 .button-homepage-2 {
   position: absolute;
-  top: 500px;
-  left: 450px;
+  top: 480px;
+  left: 200px;
 }
 
 .quotes-section {
@@ -146,8 +146,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 700px;
-  margin-right: 130px;
+  width: 337px;
 }
 
 .Tradesman-sign-up-button {
@@ -322,7 +321,7 @@ a {
   border-radius: 20px;
   box-shadow: 20px 20px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .confirmation-page-container{
@@ -331,9 +330,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./components/assets/drill.jpg');
+  background-image: url('./components/assets/bricks.jpg');
   flex-direction: column;
-  background-size: 85%;
+  background-size: 100%;
   background-position: 55% 75%;
   color: black;  
 }

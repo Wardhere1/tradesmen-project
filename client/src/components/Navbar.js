@@ -10,11 +10,9 @@ function Navbar() {
                 <img className="logo" src={logo} />
             </div>
             <div className="navbar-links">
-                <Link className="links" to='/services'>Services</Link>
                 <Link className="links" to='/'>Home</Link>
-                <Link className="links" to='#'>About-Us </Link>
+                <Link className="links" to='/services'>Services</Link>
             </div>
-            <button className="Tradesman-sign-up-button">SIGN IN</button>
         </div>
     );
 }
