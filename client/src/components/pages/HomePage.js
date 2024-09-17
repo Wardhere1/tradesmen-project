@@ -13,7 +13,6 @@ export const HomePage = () => {
           Need a new boiler? Get a boiler fully installed from £1,700 Choose from our range of boilers from the leading
           manufacturers. Flexible payment options available!
         </h1>
-        <button className="button-homepage-1">TRADESMAN SIGN UP</button>
         <button onClick={() => navigate('/services')} className="button-homepage-2">
           SELECT A SERVICE
         </button>
